@@ -1,12 +1,7 @@
-import 'package:calculator_firebase/firestore_api.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:calculator_firebase/KmMilesSecondScreen.dart';
-import 'package:calculator_firebase/CalculationObject.dart';
-import 'package:calculator_firebase/HistoryPage.dart';
-import 'dart:math';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,9 +14,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'MyCalculator',
-      routes: {
-        '/history': (context) => HistoryPage(),
-      },
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
